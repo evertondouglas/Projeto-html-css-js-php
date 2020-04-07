@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 auto;
+    margin: 0 auto;
+    background: #F2F7FA;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.contato {
+    
+    max-width: 600px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2;
+    border-radius: 0.5rem;
+
+}
+input::placeholder{
+    font-size: 17px;
+}
+
+.field-rua{
+    max-width: 280px;
+    margin-top: 15px;
+    margin-right: 110px;
+    
+}
+.number{
+    max-width: 70px;
+}
+.group-radio{
+    columns: 3;
+}

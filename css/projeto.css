@@ -1,0 +1,51 @@
+
+body, ul, li, p{ /*resetando todos estilos */
+    margin:0px; 
+    padding:0px;
+    list-style:none;
+    font-size:17px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}  
+a {
+    text-decoration:none;
+    color: aliceblue;
+}
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.header{
+    background:black
+    display:flex;
+    flex-wrap:wrap; /*em tela menores, os intes ficam abaixo um do outro*/
+    justify-content:space-between; /*Espaço entre os itens*/
+    align-items:center;
+    padding:20px;
+}
+.menu{
+display:flex; /*display flexiciveo*/
+
+}
+.menu li{
+    margin-left: 10px;
+}
+.menu li a {
+    display:block;
+    padding: 10px;
+}
+/*CSS flex*/
+.flex{
+    display: flex;
+    flex-wrap:wrap; /*em tela menores, os intes ficam abaixo um do outro*/
+    max-width: 100; /* O container vai ficar no maximo 800px de largura*/
+    margin: 0 auto; /*Alinhar todos os intens ao centro*/
+}
+.flex div{
+     flex: 1 1 200px; /* Se a tela for menor que 200px, a imagem vai quebrar para próxima linha*/
+    margin:10px;
+}
