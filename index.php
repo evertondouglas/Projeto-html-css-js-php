@@ -27,10 +27,11 @@ session_start();
                     <li><a href="login-adm.php">Área Administrativa</a></li>             
                 </ul>
           </nav>
-          <nav class="mobile ">
-          <div class="btn-menu "><i class="fas fa-bars"></i></div>
-            <div class="remove">
-                <ul class="mobileUL">
+          <nav class="mobile">
+          <div class="btn-menu ">
+            <i class="fas fa-bars"></i>
+          </div>
+                <ul>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Contato</a></li>
@@ -52,6 +53,17 @@ session_start();
             include ("consulta.php");
             ?>
         </section>
-        <script src="js/btn-menu.js"></script>
-</body>
+        <script src="js/jquery.js"></script>
+        <script scr="js/menu-btn-mobile.js"></script>
+        <script>
+        $(function(){
+            $('nav.mobile').click(function(){
+                const listaMenu = $('nav.mobile ul');
+                if(listaMenu.is(':hidden')==true)
+                    listaMenu.fadeIn();
+                else   
+                    listaMenu.fadeOut();
+            });
+        });
+        </script>
 </html>

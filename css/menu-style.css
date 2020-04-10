@@ -34,6 +34,13 @@ img{
     display: flex;
     justify-content: space-between;
 }
+a{
+    padding: 10px;
+}
+a:hover{
+    background-color: #FE5F55;
+    transition: 0.5s;
+}
 nav.mobile{
     display: none;
 }
@@ -62,37 +69,26 @@ nav.desktop a{
     
 }
 @media screen and (max-width:700px){
-    .logo {
-        display: block;
-    }
     nav.desktop{
         display: none;
     }
     nav.mobile{
         display: block;
     }
-    .mobileUL{
+    nav.mobile ul{
         position: absolute;
         top: 68px;
         left: 0%;
         width: 100%;
-        transform: translateY(-135%);
+        display: none;
         text-align: center;
         background-color: rgb(101, 101, 138);
         border-top: 1px solid black;
         transition: transform 200ms linear;
     }
-    .mobileULopen{
-        transform: translateY(0);
-    }
-    .mobileULRemove{
-        transform: translateY(-135%);
-    }
-    
-    nav.mobile ul {
-        width: 100%;
-    }
     nav.mobile li{
+        width: 100%;
+        display: block;
         padding: 10px 0;
         border-bottom: 1px solid black;
     }
