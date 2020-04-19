@@ -19,10 +19,7 @@
 		?>
 		<form class="form" method="POST" action="processa.php">
 
-			<label>Nome:</label>
-            <input type="text" class="field" name="nome" placeholder="Digite o nome completo">
-
-            <label>CPF:</label>
+			<label>CPF:</label>
             <input class="field" type="text" name="cpf" placeholder="Digite seu cpf">
             
             <div class="group">
@@ -102,23 +99,4 @@
           </div>
         </section>
 	</body>
-    <script src="js/jquery.js"></script>
-        <script scr="js/menu-btn-mobile.js"></script>
-    <script>
-        $(function(){
-            $('nav.mobile').click(function(){
-                const listaMenu = $('nav.mobile ul');
-                if(listaMenu.is(':hidden')==true){
-                    const icon = $('.btn-menu').find('i');
-                    icon.removeClass('fa-bars');
-                    icon.addClass('fa-times');
-                    listaMenu.slideToggle();}
-                else{
-                    const icon = $('.btn-menu').find('i');
-                    icon.removeClass('fa-times');
-                    icon.addClass('fa-bars');
-                    listaMenu.slideToggle();}
-            });
-        });
-        </script>
 </html>

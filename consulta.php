@@ -24,6 +24,8 @@ include_once("conexao_situacao.php.php");
     $cidade = $registro['cidade'];
     $rua = $registro['rua'];
     $numero_casa = $registro['numero_casa'];
+    $date = $registro['created'];
+
     
    
     echo "<tr>";
@@ -41,6 +43,10 @@ include_once("conexao_situacao.php.php");
     echo "<tr>";
     echo "<th>Nº LOCAL</th>";
     echo "<td>".$numero_casa."</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<th>STATUS VISTORIA</th>";
+    echo "<td></td>";
     echo "</tr>";
    
  }

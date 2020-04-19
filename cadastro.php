@@ -100,6 +100,25 @@ session_start();
             </div>
         </div>
     </section>
+    <script src="js/jquery.js"></script>
+        <script scr="js/menu-btn-mobile.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile').click(function(){
+                const listaMenu = $('nav.mobile ul');
+                if(listaMenu.is(':hidden')==true){
+                    const icon = $('.btn-menu').find('i');
+                    icon.removeClass('fa-bars');
+                    icon.addClass('fa-times');
+                    listaMenu.slideToggle();}
+                else{
+                    const icon = $('.btn-menu').find('i');
+                    icon.removeClass('fa-times');
+                    icon.addClass('fa-bars');
+                    listaMenu.slideToggle();}
+            });
+        });
+        </script>
 </body>
 
 </html>

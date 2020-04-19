@@ -14,7 +14,7 @@ include("conexao.php");
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <link rel="stylesheet" href="general-style.css">
+    <link rel="stylesheet" href="css../menu-style.css">
 </head>
 
 <body>
@@ -72,6 +72,25 @@ include("conexao.php");
             </div>
         </div>
     </section>
+    <script src="js/jquery.js"></script>
+        <script scr="js/menu-btn-mobile.js"></script>
+        <script>
+        $(function(){
+            $('nav.mobile').click(function(){
+                const listaMenu = $('nav.mobile ul');
+                if(listaMenu.is(':hidden')==true){
+                    const icon = $('.btn-menu').find('i');
+                    icon.removeClass('fa-bars');
+                    icon.addClass('fa-times');
+                    listaMenu.slideToggle();}
+                else{
+                    const icon = $('.btn-menu').find('i');
+                    icon.removeClass('fa-times');
+                    icon.addClass('fa-bars');
+                    listaMenu.slideToggle();}
+            });
+        });
+        </script>
     
 </body>
 

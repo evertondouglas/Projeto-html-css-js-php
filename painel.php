@@ -9,25 +9,59 @@ include('verifica_login.php');
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="general-style.css">
-    <style>.menu li.name b{ color: #FE5F55;}}</style>
+    <link rel="stylesheet" href="css../style-geral.css">
+    <style>.menu li.name b{ color: #FE5F55;}</style>
     
 </head>
 <body>
-     <header class="header">
-        <a href="index.php">Logo</a>
-          <nav>
-            <ul class="menu">
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Produto</a></li>
-                <li><a href="#">Contato</a></li>
-                <li class="name"><a href=""> <b> Olá, <?php echo $_SESSION['nome'];?></b> </a></li>
-                <li><a href="logout.php"> <b> Sair </b> </a></li>
-            </ul>
+<header class="header">
+          <div class="logo left"><a href="index.php">Logo</a></div>
+          <nav class="desktop right">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produto</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="login.php">login</a></li>
+                    <li><a href="login-adm.php">Área Administrativa</a></li>             
+                </ul>
           </nav>
-    </header>  
+          <nav class="mobile">
+          <div class="btn-menu ">
+            <i class="fas fa-bars"></i>
+          </div>
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Produto</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="login.php">login</a></li>
+                    <li><a href="login-adm.php">Área Administrativa</a></li>             
+                </ul>
+            </div>
+          </nav>
+        
+         
+</header>  
 
 <?php include('situacao.php'); ?>  
+<script src="js/jquery.js"></script>
+<script scr="js/menu-btn-mobile.js"></script>
+<script>
+        $(function(){
+            $('nav.mobile').click(function(){
+                const listaMenu = $('nav.mobile ul');
+                if(listaMenu.is(':hidden')==true){
+                    const icon = $('.btn-menu').find('i');
+                    icon.removeClass('fa-bars');
+                    icon.addClass('fa-times');
+                    listaMenu.slideToggle();}
+                else{
+                    const icon = $('.btn-menu').find('i');
+                    icon.removeClass('fa-times');
+                    icon.addClass('fa-bars');
+                    listaMenu.slideToggle();}
+            });
+        });
+        </script>
     
 </body>
 </html>

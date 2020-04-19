@@ -50,7 +50,7 @@ session_start();
         
         <section class="flex">
             <?php
-            include ("consulta.php");
+            include ("cadastro.php");
             ?>
         </section>
         <script src="js/jquery.js"></script>

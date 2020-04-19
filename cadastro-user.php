@@ -9,7 +9,8 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css../menu-style.css">
+    <link rel="stylesheet" href="css../style-form-use.css">
+    <link rel="stylesheet" href="css/menu-style.css">
     <style>
        
     </style>
@@ -45,12 +46,12 @@ session_start();
 </header>
 
 
-        <h1>Lista de Casos Suspeitos do Mosquito Aedes Aegypti</h1>
+        <h1></h1>
        
         
-        <section class="flex">
+        <section>
             <?php
-            include ("consulta.php");
+            include ("situacao.php");
             ?>
         </section>
         <script src="js/jquery.js"></script>
