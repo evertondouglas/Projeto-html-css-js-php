@@ -1,8 +1,3 @@
-<?php
-session_start();
-include("conexao.php");
-?>
-
 <!DOCTYPE html>
 <html>
     
@@ -18,20 +13,6 @@ include("conexao.php");
 </head>
 
 <body>
-<header class="header">
-          <a href="index.php">Logo</a>
-          <nav>
-                <ul class="menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Produto</a></li>
-                    <li><a href="#">Contato</a></li>
-                   
-                </ul>
-          </nav>
-        </header>
- 
-            
-        
     <section class="hero is-success is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -49,7 +30,7 @@ include("conexao.php");
                     unset($_SESSION['nao_autenticado']);
                     ?>
                     <div class="box">
-                        <form action="validar-login.php" method="POST">
+                        <form action="validar-login-func.php" method="POST">
                             <div class="field">
                                 <div class="control">
                                     <input name="usuario" name="text" class="input is-large" placeholder="Seu usuário" autofocus="">
@@ -63,7 +44,7 @@ include("conexao.php");
                             </div>
 
                             <div class="field">
-                                <a href="cadastro.php">Cadastrar</a>
+                                <a href="cadastro-func.php">Cadastrar</a>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
                         </form>

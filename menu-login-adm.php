@@ -24,7 +24,7 @@ session_start();
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Contato</a></li>
                     <li><a href="menu-login-usuario.php">login</a></li>
-                    <li><a href="menu-login-adm.php">Área Administrativa</a></li>             
+                    <li><a href="login-adm.php">Área Administrativa</a></li>             
                 </ul>
           </nav>
           <nav class="mobile">
@@ -36,21 +36,16 @@ session_start();
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Contato</a></li>
                     <li><a href="menu-login-usuario.php">login</a></li>
-                    <li><a href="menu-login-adm.php">Área Administrativa</a></li>             
+                    <li><a href="login-adm.php">Área Administrativa</a></li>             
                 </ul>
             </div>
           </nav>
         
          
-</header>
-
-
-        <h1>Lista de Casos Suspeitos do Mosquito Aedes Aegypti</h1>
-       
-        
-        <section class="flex">
+</header>        
+        <section>
             <?php
-            include ("consulta.php");
+            include ("login-adm.php");
             ?>
         </section>
         <script src="js/jquery.js"></script>

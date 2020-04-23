@@ -6,12 +6,15 @@ include('verifica_login.php');
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link href="css../css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css../style-geral.css">
-    <style>.menu li.name b{ color: #FE5F55;}</style>
-    
+    <link rel="stylesheet" href="css/menu-style.css">
+    <style>
+       
+    </style>
+   
 </head>
 <body>
 <header class="header">
@@ -21,8 +24,8 @@ include('verifica_login.php');
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Contato</a></li>
-                    <li><a href="login.php">login</a></li>
-                    <li><a href="login-adm.php">Área Administrativa</a></li>             
+                    <li><a href="menu-login-usuario.php">login</a></li>
+                    <li><a href="menu-login-adm.php">Área Administrativa</a></li>             
                 </ul>
           </nav>
           <nav class="mobile">
@@ -33,19 +36,27 @@ include('verifica_login.php');
                     <li><a href="#">Sobre</a></li>
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Contato</a></li>
-                    <li><a href="login.php">login</a></li>
-                    <li><a href="login-adm.php">Área Administrativa</a></li>             
+                    <li><a href="menu-login-usuario.php">login</a></li>
+                    <li><a href="menu-login-adm.php">Área Administrativa</a></li>             
                 </ul>
             </div>
           </nav>
         
          
-</header>  
+</header>
 
-<?php include('situacao.php'); ?>  
-<script src="js/jquery.js"></script>
-<script scr="js/menu-btn-mobile.js"></script>
-<script>
+
+        <h1>Lista de Casos Suspeitos do Mosquito Aedes Aegypti</h1>
+       
+        
+        <section class="fle">
+            <?php
+            include ("situacao.php");
+            ?>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script scr="js/menu-btn-mobile.js"></script>
+        <script>
         $(function(){
             $('nav.mobile').click(function(){
                 const listaMenu = $('nav.mobile ul');
@@ -62,6 +73,4 @@ include('verifica_login.php');
             });
         });
         </script>
-    
-</body>
 </html>

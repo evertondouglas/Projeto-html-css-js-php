@@ -25,6 +25,8 @@ include_once("conexao_situacao.php.php");
     $rua = $registro['rua'];
     $numero_casa = $registro['numero_casa'];
     $date = $registro['created'];
+    $processa_status = $registro['processa_status'];
+    $data = $registro['created'];
 
     
    
@@ -46,7 +48,11 @@ include_once("conexao_situacao.php.php");
     echo "</tr>";
     echo "<tr>";
     echo "<th>STATUS VISTORIA</th>";
-    echo "<td></td>";
+    echo "<td>".$processa_status."</td>";
+    echo "</tr>";
+    echo "<tr>";
+    echo "<th>DATA E HORA</th>";
+    echo "<td>".$data."</td>";
     echo "</tr>";
    
  }

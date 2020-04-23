@@ -1,7 +1,3 @@
-<?php
-session_start();
-include("conexao.php");
-?>
 
 <!DOCTYPE html>
 <html>
@@ -14,24 +10,10 @@ include("conexao.php");
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <link rel="stylesheet" href="css../menu-style.css">
+    <link rel="stylesheet" href="css/menu-style.css">
 </head>
 
-<body>
-<header class="header">
-          <a href="index.php">Logo</a>
-          <nav>
-                <ul class="menu">
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Produto</a></li>
-                    <li><a href="#">Contato</a></li>
-                   
-                </ul>
-          </nav>
-        </header>
- 
-            
-        
+<body>        
     <section class="hero is-success is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -63,7 +45,7 @@ include("conexao.php");
                             </div>
 
                             <div class="field">
-                                <a href="cadastro.php">Cadastrar</a>
+                                <a href="menu-cadastro-usuario.php">Cadastrar</a>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Entrar</button>
                         </form>
